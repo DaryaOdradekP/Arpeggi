@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".EasterEggActivity">
+
+    <LinearLayout
+        android:id="@+id/videoEasterContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtubeEaster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/videoEasterContainer"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleEasterTv"
+            style="@style/shriftt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoEasterContainer"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text=""
+            android:textColor="#9867C5"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

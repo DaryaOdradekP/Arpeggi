@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".registration.AppActivity">
+
+    <ImageButton
+        android:id="@+id/arpeggiBtn"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#ffffffff"
+        android:padding="4dp"
+        android:src="@drawable/fishh"
+        android:layout_marginBottom="60dp"/>
+
+    <Button
+        android:id="@+id/myAccountBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background_color"
+        android:text="мой аккаунт"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        style="@style/shriftt"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        style="@style/shriftt"
+        android:id="@+id/changeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background_color"
+        android:text="сменить пароль"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="удалить аккаунт"
+        android:textColor="@color/button_background_color"
+        android:textSize="30dp"
+        style="@style/shriftt"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        style="@style/shriftt"
+        android:id="@+id/logOutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_background_color"
+        android:text="выйти"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
+
+</LinearLayout>

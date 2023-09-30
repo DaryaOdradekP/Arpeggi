@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fff"
+    android:minHeight="100dp">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textColor="@color/button_background_color"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        style="@style/shriftt"
+        />
+
+    <TextView
+        android:id="@+id/tvProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Problem"
+        android:textSize="35dp"
+        android:textColor="#2E8B57"
+        android:textStyle="bold"
+        style="@style/shriftt"
+        />
+
+    <TextView
+        android:id="@+id/tvReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reason"
+        android:textSize="30dp"
+        style="@style/shriftt"
+        />
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="shriftt" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/shriftt</item>
+    </style>
+</resources>

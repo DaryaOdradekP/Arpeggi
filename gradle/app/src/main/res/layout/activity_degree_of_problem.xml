@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".mood.DegreeOfProblemActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Оцените степень вашего настроения:"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        android:textColor="@color/button_background_color"
+        android:textAlignment="center"
+        style="@style/shriftt"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox
+        android:button="@null"
+        android:background="@drawable/checkbox_custom"
+        android:textColor="#000"
+        android:id="@+id/extremelyCB"
+        style="@style/shriftt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Очень"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        android:padding="8dp"/>
+
+    <CheckBox
+        android:button="@null"
+        android:textColor="#000"
+        android:id="@+id/veryCB"
+        android:background="@drawable/checkbox_custom"
+        style="@style/shriftt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Средне"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:background="@drawable/checkbox_custom"
+        android:button="@null"
+        android:id="@+id/aLittleCB"
+        style="@style/shriftt"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Немного"
+        android:textSize="30sp"
+        android:onClick="onCheckboxClicked"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        style="@style/shriftt"
+        android:id="@+id/enter1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:textSize="42sp"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/button_background_color"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

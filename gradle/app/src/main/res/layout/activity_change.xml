@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ChangeActivity">
+
+    <EditText
+        android:background="#9867C5"
+        style="@style/shriftt"
+        android:textColor="#fff"
+        android:id="@+id/oldPasswordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="14"
+        android:hint="Введите ваш старый пароль"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:background="#9867C5"
+        android:textColor="#fff"
+        style="@style/shriftt"
+        android:id="@+id/newPasswordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="14"
+        android:hint="Введите новый пароль"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        />
+
+    <Button
+        style="@style/shriftt"
+        android:id="@+id/changeOkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2E8B57"
+        android:text="OK"
+        android:textColor="@color/button_background_color_1"
+        android:textSize="30sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9867C5"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".registration.SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="380sp"
+        android:layout_height="400sp">
+
+        <ImageView
+            android:id="@+id/rectimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/white_rectangle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:background="#9867C5"
+                android:textColor="#fff"
+                android:id="@+id/nameRegTxt"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="14"
+                android:hint="Введите ваше имя"
+                android:textSize="30sp" />
+
+            <EditText
+                android:background="#9867C5"
+                android:textColor="#fff"
+                android:id="@+id/loginRegTxt"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="14"
+                android:hint="Введите ваш логин"
+                android:textSize="30sp" />
+
+            <EditText
+                android:background="#9867C5"
+                android:textColor="#fff"
+                android:id="@+id/passwordRegTxt"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="14"
+                android:hint="Введите ваш пароль"
+                android:inputType="textPassword"
+                android:textSize="30sp" />
+
+            <EditText
+                android:background="#9867C5"
+                android:textColor="#fff"
+                android:id="@+id/password2RegTxt"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="14"
+                android:hint="Подтвердите пароль"
+                android:inputType="textPassword"
+                android:textSize="30sp" />
+
+
+            <Button
+                android:id="@+id/signRegInBtn"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2E8B57"
+                android:text="регистрация"
+                android:textColor="@color/button_background_color_1"
+                android:textSize="38dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

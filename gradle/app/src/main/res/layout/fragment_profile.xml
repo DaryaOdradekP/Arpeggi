@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="16dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/rectimage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/rounded_rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            style="@style/shriftt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="Статистика настроения за последнюю неделю:"
+            android:textColor="#ffff"
+            android:textSize="42sp"
+            app:layout_constraintBottom_toBottomOf="@id/rectimage"
+            app:layout_constraintEnd_toEndOf="@id/rectimage"
+            app:layout_constraintStart_toStartOf="@id/rectimage"
+            app:layout_constraintTop_toTopOf="@id/rectimage"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/textPositiveCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Позитивных эмоций: 0"
+        android:textSize="50sp"
+        style="@style/shriftt"
+        android:textColor="@color/button_background_color"/>
+
+    <TextView
+        android:id="@+id/textNegativeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Негативных эмоций: 0"
+        android:textSize="50sp"
+        style="@style/shriftt"
+        android:textColor="@color/button_background_color"/>
+
+    <TextView
+        android:id="@+id/textNeutralCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нейтральных эмоций: 0"
+        android:textSize="48sp"
+        style="@style/shriftt"
+        android:textColor="@color/button_background_color"/>
+
+
+    <ListView
+        android:id="@+id/myList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "111909199009",
+    "firebase_url": "https://arpeggi-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "arpeggi",
+    "storage_bucket": "arpeggi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111909199009:android:17951eff595d2149bda4e0",
+        "android_client_info": {
+          "package_name": "com.example.arpeggi10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111909199009-cvm9o73cvuti455rhkk720ubsh086t6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG_QGVLFn4OoYW8S5oaPDxWnLA7bOc41E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111909199009-cvm9o73cvuti455rhkk720ubsh086t6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111909199009:android:3ddbbf509b3dce54bda4e0",
+        "android_client_info": {
+          "package_name": "com.example.arpeggi11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111909199009-cvm9o73cvuti455rhkk720ubsh086t6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG_QGVLFn4OoYW8S5oaPDxWnLA7bOc41E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111909199009-cvm9o73cvuti455rhkk720ubsh086t6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

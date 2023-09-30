@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding = "10dp"
+    android:background="#fff"
+    tools:context=".registration.AppActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sosButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#2E8B57"
+                android:onClick="onSOSButtonClick"
+                android:src="@drawable/sos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/infoButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/button_round_background"
+                android:onClick="onInfoButtonClick"
+                android:src="@drawable/ic_info"
+                app:layout_constraintBottom_toBottomOf="@id/sosButton"
+                app:layout_constraintStart_toEndOf="@id/sosButton"
+                app:layout_constraintTop_toTopOf="@id/sosButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/rectimage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/rounded_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/helloTv"
+                style="@style/shriftt"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/rectimage"
+                app:layout_constraintEnd_toEndOf="@id/rectimage"
+                app:layout_constraintStart_toStartOf="@id/rectimage"
+                app:layout_constraintTop_toTopOf="@id/rectimage"
+                app:layout_constraintHorizontal_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/firstBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/first1" />
+
+                    <TextView
+                        android:id="@+id/firstTxt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:text="Daily Calm"
+                        android:textColor="#2E8B57"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/secondBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/first2" />
+
+                    <TextView
+                        android:id="@+id/secondTxt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:text="Daily Jay"
+                        android:textColor="#2E8B57"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/thirdBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/first3" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/thirdTxt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:text="Daily Trip"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/fourthBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/first4" />
+
+                    <TextView
+                        android:id="@+id/fourthTxt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:text="Daily Move"
+                        android:textColor="#2E8B57"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/rectimage1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/rounded_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/rectimage1"
+                app:layout_constraintEnd_toEndOf="@id/rectimage1"
+                app:layout_constraintStart_toStartOf="@id/rectimage1"
+                app:layout_constraintTop_toTopOf="@id/rectimage1">
+
+                <TextView
+                    android:id="@+id/firstTv"
+                    style="@style/shriftt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Улучшаем самочувствие быстро и просто"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/first1Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/second1" />
+
+                    <TextView
+                        android:id="@+id/first1Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Снижаем тревогу"
+                        android:textColor="#2E8B57"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/second1Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/second2" />
+
+                    <TextView
+                        android:id="@+id/second1Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="Внимательная прогулка"
+                        android:textColor="#2E8B57"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/third1Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/second3" />
+
+                    <TextView
+                        android:id="@+id/third1Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Сканируем тело"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/fourth1Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/second4" />
+
+                    <TextView
+                        android:id="@+id/fourth1Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Глубокая концентрация"
+                        android:textColor="#2E8B57"
+                        android:textStyle="bold"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/rectimage2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/rounded_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/rectimage2"
+                app:layout_constraintEnd_toEndOf="@id/rectimage2"
+                app:layout_constraintStart_toStartOf="@id/rectimage2"
+                app:layout_constraintTop_toTopOf="@id/rectimage2">
+
+                <TextView
+                    android:id="@+id/secondTv"
+                    style="@style/shriftt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ментальный фитнес"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/first2Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/third1" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/first2Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Осознанность для новичков"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/second2Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/third2" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/second2Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Тренировка 1"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/third2Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/third3" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/third2Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Треировка 2"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/fourth2Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/third4" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/fourth2Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Тренировка доверия"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/rectimage3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/rounded_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/rectimage3"
+                app:layout_constraintEnd_toEndOf="@id/rectimage3"
+                app:layout_constraintStart_toStartOf="@id/rectimage3"
+                app:layout_constraintTop_toTopOf="@id/rectimage3">
+
+                <TextView
+                    android:id="@+id/thirdTv"
+                    style="@style/shriftt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Истории перед сном"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/first3Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fourth1" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/first3Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="История 1"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/second3Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fourth2" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/second3Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="История 2"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/third3Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fourth3" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/third3Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="История 3"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/fourth3Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fourth4" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/fourth3Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="История 4"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/rectimage4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/rounded_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/rectimage4"
+                app:layout_constraintEnd_toEndOf="@id/rectimage4"
+                app:layout_constraintStart_toStartOf="@id/rectimage4"
+                app:layout_constraintTop_toTopOf="@id/rectimage4">
+
+                <TextView
+                    android:id="@+id/fourthTv"
+                    style="@style/shriftt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Медитации"
+                    android:textColor="#ffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0.5"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/first4Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fifth1" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/first4Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Медитация 1"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/second4Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fifth2" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/second4Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Медитация 2"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/third4Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fifth3" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/third4Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Медитация 3"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/fourth4Btn"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:background="#ffffffff"
+                        android:padding="4dp"
+                        android:src="@drawable/fifth4" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/fourth4Txt"
+                        style="@style/shriftt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:text="Медитация 4"
+                        android:textColor="#2E8B57"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>

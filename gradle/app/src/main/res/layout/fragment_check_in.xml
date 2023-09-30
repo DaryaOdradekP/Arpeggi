@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="18dp"
+    tools:context=".fragments.CheckInFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:id="@+id/rectimage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/rounded_rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/questionTv"
+            style="@style/shriftt"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Как вы себя чувствуете?"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/rectimage"
+            app:layout_constraintEnd_toEndOf="@id/rectimage"
+            app:layout_constraintStart_toStartOf="@id/rectimage"
+            app:layout_constraintTop_toTopOf="@id/rectimage"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:numColumns="2"
+        android:rowCount="5">
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/angryBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF3333"
+            android:singleLine="true"
+            android:text="злость"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/annoyedBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF3333"
+            android:singleLine="true"
+            android:text="раздраженность"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/stressedBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FF3333"
+            android:singleLine="true"
+            android:text="стресс"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/happyBtn"
+            style="@style/shriftt"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FFC000"
+            android:singleLine="true"
+            android:text="счастье"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/lovingBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FFC000"
+            android:singleLine="true"
+            android:text="нежность"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/proudBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#FFC000"
+            android:singleLine="true"
+            android:text="гордость"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/calmBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#4CBB17"
+            android:singleLine="true"
+            android:text="спокойствие"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/optimisticBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#4CBB17"
+            android:singleLine="true"
+            android:text="оптимистичность"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/gratefulBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#4CBB17"
+            android:singleLine="true"
+            android:text="благодарность"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/sadBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#6495ED"
+            android:singleLine="true"
+            android:text="грусть"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/ashamedBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#6495ED"
+            android:singleLine="true"
+            android:text="стыд"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/guiltyBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#6495ED"
+            android:singleLine="true"
+            android:text="вина"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/anxiousBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A668A6"
+            android:singleLine="true"
+            android:text="тревога"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/insecureBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A668A6"
+            android:singleLine="true"
+            android:text="небезопасность"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/afraidBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A668A6"
+            android:singleLine="true"
+            android:text="страх"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/tiredBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A0A0A0"
+            android:singleLine="true"
+            android:text="усталость"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/numbBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A0A0A0"
+            android:singleLine="true"
+            android:text="оцепенение"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/boredBtn"
+            style="@style/shriftt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:backgroundTint="#A0A0A0"
+            android:singleLine="true"
+            android:text="скука"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+</LinearLayout>

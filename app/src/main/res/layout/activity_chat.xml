@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <!-- Контейнер приветствия -->
+    <LinearLayout
+        android:id="@+id/greetingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Приветствие"
+            android:textSize="24sp"
+            android:padding="16dp"
+            style="@style/shriftt"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/chatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"
+            style="@style/shriftt"
+            android:padding="16dp" />
+
+    </LinearLayout>
+    <Button
+        android:backgroundTint="#2E8B57"
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На главный экран"
+        style="@style/shriftt"
+        android:textSize="36sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

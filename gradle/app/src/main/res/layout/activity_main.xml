@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="16dp"
+    tools:context=".registration.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/rectimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rounded_rectangle"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/loginTxt"
+                style="@style/shriftt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#2E8B57"
+                android:textColor="#fff"
+                android:hint="Введите логин"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/passwordTxt"
+                style="@style/shriftt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#2E8B57"
+                android:textColor="#fff"
+                android:hint="Введите пароль"
+                android:inputType="textPassword"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/logInBtn"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0sp"
+                android:backgroundTint="#ffff"
+                android:text="Войти"
+                android:textColor="#2E8B57"
+                android:textSize="38sp" />
+
+            <Button
+                android:id="@+id/signInBtn"
+                style="@style/shriftt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#ffff"
+                android:text="Регистрация"
+                android:textColor="#2E8B57"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
